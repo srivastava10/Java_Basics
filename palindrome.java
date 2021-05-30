@@ -2,9 +2,9 @@
 //Super Palindrome
 
 import java.util.Scanner;
-public class func{
+public class palindrome{
 	
-	boolean isSuperPalindrome(int n){
+	boolean isPalindrome(int n){
 		int rev  = 0;
 		for(int i=n;i!=0;i/=10){
 			rev = rev*10+i%10;
@@ -19,9 +19,9 @@ public class func{
 	public static void main(String args[]){
 		Scanner rd = new Scanner(System.in);
 		System.out.println("Enter the number");
-		func obj = new func();
+		palindrome obj = new palindrome();
 		int n=  rd.nextInt();
-		if(obj.isSuperPalindrome(n) && obj.isSuperPalindrome(n*n)){
+		if(obj.isPalindrome(n) && obj.isPalindrome(n*n)){
 			System.out.println("Super palindrome");
 		}
 		
