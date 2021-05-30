@@ -23,6 +23,7 @@ public class test{
 		System.out.println("Enter Number");
 		int u = rd.nextInt();
 		int v = rd.nextInt();
+		//For Example- Checking for Twin Prime
 		
 		boolean x = obj.isPrime(u);
 		boolean y = obj.isPrime(v);
